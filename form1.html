@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h2>Formulario Basico</h2>
+    <form action="procesar.php" method="post">
+        <fieldset>
+            <label>Nombre </label>
+            <input type="text" name="Nombre">
+            <br>
+            <br>
+            <label>Edad:</label>
+            <input type="number" name="Edad" placeholder="Escriba su edad aqui">
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <hr>
+
+        </fieldset>
+
+        <fieldset>
+            <h2> Botones y casillas </h2>
+            <form action="mailto: yeray.jimenez4@educa.madrid.org">
+                <input type="radio" name="color" value="amarillo">amarillo
+                <br>
+                <input type="radio" name="color" value="verde"> verde
+                <br>
+                <input type="radio" name="color" value="rojo"> rojo
+                <br>
+                <br>
+                <input type="submit" name="color" value="Enviar">
+
+        </fieldset>
+
+        <fieldset>
+            <h2>Tipos De Campo</h2>
+            <form>
+                <label> Nombre:</label>
+                <input type="text" name="Nombre" />
+                <br>
+                <br>
+                <label> Contraseña:</label>
+                <input type="password" name="Contraseña" />
+                <br>
+                <br>
+                <label> Email: </label>
+                <input type="email" name="email" />
+                <br>
+                <br>
+                <label> Fecha </label>
+                <input type="datetime-local" name="Fecha y hora">
+                <br>
+                <br>
+                <input type="submit" value="Enviar" />
+            </form>
+        </fieldset>
+        <hr>
+        <form>
+            <select name="fruta" id="fruta">
+                <optgroup label="Temporada">
+                    <option value="banana"> Banana</option>
+                    <option value="naranja">Naranja</option>
+                </optgroup>
+                <optgroup label="Tropicales">
+                    <option value="Fresa">Fresa</option>
+                    <option value="Piña">Piña</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <label>Fruta datalist</label>
+            <input list="frutas" name="Frutas" />
+            <datalist id="frutas">
+                <option label="Banana" value="banana"></option>
+                <option label="Naranja" value="naranja"></option>
+                <option label="Fresa" value="fresa"></option>
+                <option label="Piña" value="Piña"></option>
+            </datalist>
+        </form>
+</body>
+
+</html>
