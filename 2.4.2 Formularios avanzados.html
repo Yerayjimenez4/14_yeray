@@ -1,81 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <title>Formularios Avanzados</title>
- <style>
+    <style>
         label {
             display: block;
             margin-top: 10px;
         }
-         #env{
+
+        #env {
             display: block;
             margin-top: 15px;
             background-color: rgb(123, 45, 192);
             color: white;
             border-radius: 10px;
         }
-        
-        
-        
     </style>
 </head>
+
 <body>
- <form>
+    <form>
         <fieldset>
-             <legend>Personaje</legend>
+            <legend>Personaje</legend>
             <label>Personaje Favorito</label>
-            <input list="Superheroe" name="Superheroe" placeholder="Elige Superheroe"/>
+            <input list="Superheroe" name="Superheroe" placeholder="Elige Superheroe" />
             <datalist id="Superheroe">
-                <option label="Iron Man" value= "Iron Man" ></option>
-                <option label="The Hulk" value="The Hulk" ></option>
+                <option label="Iron Man" value="Iron Man"></option>
+                <option label="The Hulk" value="The Hulk"></option>
             </datalist>
-             <br>
-             <br>
+            <br>
+            <br>
             <label>Color</label>
-            <input type="color"> 
-             
+            <input type="color">
+
         </fieldset>
 
         <fieldset>
             <legend>Datos de contacto</legend>
-               <label>Nombre </label>
+            <label>Nombre </label>
             <input type="text" name="Nombre">
             <br>
             <br>
             <label>Telefono:</label>
             <input type="Telefono" name="Telefono" placeholder="Formato: 999-999-999">
-             <br>
-             <br>
-                <label> Fecha </label>
-                <input type="date" name="Fecha">
-                <br>
-                <br>
+            <br>
+            <br>
+            <label> Fecha </label>
+            <input type="date" name="Fecha">
+            <br>
+            <br>
         </fieldset>
+
+        <br>
 
         <fieldset>
             <legend>Selecciona Forma de contacto preferida:</legend>
-           <input type="radio" name="Email"> Email
-           <input type="radio" name="Telefono">Telefono
-           <input type="radio" name="Carta">Carta
-           
-           
+            <input type="radio" name="res"> Email
+            <input type="radio" name="res">Telefono
+            <input type="radio" name="res">Carta
+
+
 
 
         </fieldset>
+        
+        <br>
 
         <fieldset>
-            <legend></legend>
-
+            <legend>Eilge tus asignaturas favoritas</legend>
+            <input type="checkbox" name="Aplicaciónes Web" >Aplicaciónes Web
+            <input type="checkbox" name="Seguridad Informatica">Seguridad Informatica
 
 
         </fieldset>
         <br>
         <br>
-        <input  id = "env" type="submit" value="Enviar">
+        <input id="env" type="submit" value="Enviar">
 
 
     </form>
-    
+
 </body>
+
 </html>
