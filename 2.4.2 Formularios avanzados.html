@@ -11,12 +11,18 @@
         }
 
         #env {
-            display: block;
-            margin-top: 15px;
+            
             background-color: rgb(123, 45, 192);
             color: white;
             border-radius: 10px;
         }
+        #res{
+            margin-top: 15px;
+            background-color: rgb(240, 61, 61);
+            color: white;
+            border-radius: 10px;
+        }
+        
     </style>
 </head>
 
@@ -30,8 +36,9 @@
                 <option label="Iron Man" value="Iron Man"></option>
                 <option label="The Hulk" value="The Hulk"></option>
             </datalist>
+        
             <br>
-            <br>
+        <br>
             <label>Color</label>
             <input type="color">
 
@@ -41,16 +48,20 @@
             <legend>Datos de contacto</legend>
             <label>Nombre </label>
             <input type="text" name="Nombre">
-            <br>
-            <br>
+        <br>
+        <br>
+           
             <label>Telefono:</label>
             <input type="Telefono" name="Telefono" placeholder="Formato: 999-999-999">
-            <br>
-            <br>
+        
+        <br>
+        <br>
+
             <label> Fecha </label>
             <input type="date" name="Fecha">
-            <br>
-            <br>
+            
+        <br>
+        <br>
         </fieldset>
 
         <br>
@@ -75,13 +86,68 @@
 
 
         </fieldset>
+
         <br>
         <br>
+
+       <fieldset>
+            <legend>¿Cuanto te gusta esa asignatura?</legend>
+            <input type="range" name="range" min="0" max="10"/>
+
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset>
+          
+            <legend>Horario</legend>
+            <label>Define tu zona horaria</label>
+            <input type="time" name="time"/>
+
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset>
+            
+            <input type="image" name="image" src="assets / img/1.jpg" alt="image input"/>
+
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset>
+
+            <legend>Pon aqui tu web de informática favorita</legend>
+            <input type="url" name="url" value="http://webprueba.es"/>
+       
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset>
+
+            <legend>Texto</legend>
+            <input type="text" name="text" value = "Escribe aqui tu valoracion" />
+
+
+        </fieldset>
+
+
+
+
+
         <input id="env" type="submit" value="Enviar">
+        <input id="res" type="reset" name="reset" value="Restablecer"/>
+        <br>
+        <br>
 
+        </form>
 
-    </form>
-
-</body>
+    </body>
 
 </html>
