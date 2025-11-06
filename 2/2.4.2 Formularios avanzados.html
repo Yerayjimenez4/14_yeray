@@ -11,23 +11,23 @@
         }
 
         #env {
-            
+
             background-color: rgb(123, 45, 192);
             color: white;
             border-radius: 10px;
         }
-        #res{
+
+        #res {
             margin-top: 15px;
             background-color: rgb(240, 61, 61);
             color: white;
             border-radius: 10px;
         }
-        
     </style>
 </head>
 
 <body>
-    <form>
+    <form action="mailto:yeray@educa.madrid.org" method="post">
         <fieldset>
             <legend>Personaje</legend>
             <label>Personaje Favorito</label>
@@ -36,11 +36,11 @@
                 <option label="Iron Man" value="Iron Man"></option>
                 <option label="The Hulk" value="The Hulk"></option>
             </datalist>
-        
+
             <br>
-        <br>
+            <br>
             <label>Color</label>
-            <input type="color">
+            <input name="color" type="color">
 
         </fieldset>
 
@@ -48,51 +48,42 @@
             <legend>Datos de contacto</legend>
             <label>Nombre </label>
             <input type="text" name="Nombre">
-        <br>
-        <br>
-           
+            <br>
+            <br>
+
             <label>Telefono:</label>
-            <input type="Telefono" name="Telefono" placeholder="Formato: 999-999-999">
-        
-        <br>
-        <br>
+            <input type="number" name="Telefono" placeholder="Formato: 999-999-999">
+
+            <br>
+            <br>
 
             <label> Fecha </label>
             <input type="date" name="Fecha">
-            
-        <br>
-        <br>
+
+            <br>
+            <br>
         </fieldset>
 
         <br>
 
         <fieldset>
             <legend>Selecciona Forma de contacto preferida:</legend>
-            <input type="radio" name="res"> Email
-            <input type="radio" name="res">Telefono
-            <input type="radio" name="res">Carta
+            <input type="radio" name="res" value=""> Email
+            <input type="radio" name="res" value="">Telefono
+            <input type="radio" name="res" value="">Carta
 
 
 
 
         </fieldset>
-        
+
         <br>
 
         <fieldset>
             <legend>Eilge tus asignaturas favoritas</legend>
-            <input type="checkbox" name="Aplicaciónes Web" >Aplicaciónes Web
-            <input type="checkbox" name="Seguridad Informatica">Seguridad Informatica
+            <input type="checkbox" name="Aplicaciónes Web" value="">Aplicaciónes Web
+            <input type="checkbox" name="Seguridad Informatica" value="">Seguridad Informatica
 
-
-        </fieldset>
-
-        <br>
-        <br>
-
-       <fieldset>
-            <legend>¿Cuanto te gusta esa asignatura?</legend>
-            <input type="range" name="range" min="0" max="10"/>
 
         </fieldset>
 
@@ -100,10 +91,19 @@
         <br>
 
         <fieldset>
-          
+            <legend>¿Cuanto te gusta esa asignatura?</legend>
+            <input type="range" name="range" min="0" max="10" />
+
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset>
+
             <legend>Horario</legend>
             <label>Define tu zona horaria</label>
-            <input type="time" name="time"/>
+            <input type="time" name="time" />
 
         </fieldset>
 
@@ -111,8 +111,8 @@
         <br>
 
         <fieldset>
-            
-            <input type="image" name="image" src="assets / img/1.jpg" alt="image input"/>
+
+            <input type="image" name="image" src="assets / img/1.jpg" alt="image input" />
 
         </fieldset>
 
@@ -122,8 +122,8 @@
         <fieldset>
 
             <legend>Pon aqui tu web de informática favorita</legend>
-            <input type="url" name="url" value="http://webprueba.es"/>
-       
+            <input type="url" name="url" value="http://webprueba.es" />
+
         </fieldset>
 
         <br>
@@ -132,7 +132,7 @@
         <fieldset>
 
             <legend>Texto</legend>
-            <input type="text" name="text" value = "Escribe aqui tu valoracion" />
+            <input type="text" name="text" value="Escribe aqui tu valoracion" />
 
 
         </fieldset>
@@ -142,12 +142,12 @@
 
 
         <input id="env" type="submit" value="Enviar">
-        <input id="res" type="reset" name="reset" value="Restablecer"/>
+        <input id="res" type="reset" name="reset" value="Restablecer" />
         <br>
         <br>
 
-        </form>
+    </form>
 
-    </body>
+</body>
 
 </html>

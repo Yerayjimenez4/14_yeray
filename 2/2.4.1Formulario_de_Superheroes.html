@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-       <style>
+    <style>
         label {
             display: block;
             margin-top: 10px;
         }
-         #env{
+
+        #env {
             display: block;
             margin-top: 15px;
             background-color: rgb(123, 45, 192);
             color: white;
             border-radius: 10px;
         }
-        
-        
-        
     </style>
     <title>Formulario de Superheroe</title>
 </head>
+
 <body>
-    <form>
+    <form action="" method="post">
         <fieldset>
-             <legend>Personaje</legend>
+            <legend>Personaje</legend>
             <label>Personaje Favorito</label>
-            <input list="Superheroe" name="Superheroe" placeholder="Elige Superheroe"/>
+            <input list="Superheroe" name="superheroe" placeholder="Elige Superheroe" />
             <datalist id="Superheroe">
-                <option label="Iron Man" value= "Iron Man" ></option>
-                <option label="The Hulk" value="The Hulk" ></option>
+                <option label="Iron Man" value="Iron Man"></option>
+                <option label="The Hulk" value="The Hulk"></option>
             </datalist>
-             <br>
-             <br>
+            <br>
+            <br>
             <label>Color</label>
-            <input type="color"> 
-             
+            <input name="color" type="color">
+
         </fieldset>
 
         <fieldset>
             <legend>Datos de contacto</legend>
-               <label>Nombre </label>
+            <label>Nombre </label>
             <input type="text" name="Nombre">
             <br>
             <br>
             <label>Telefono:</label>
-            <input type="Telefono" name="Telefono" placeholder="Formato: 999-999-999">
+            <input type="number" name="Telefono" placeholder="Formato: 999-999-999">
 
 
         </fieldset>
 
         <br>
         <br>
-        <input  id = "env" type="submit" value="Enviar">
+        <input id="env" type="submit" value="Enviar">
 
 
     </form>
 </body>
+
 </html>
