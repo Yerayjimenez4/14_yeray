@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flex</title>
+
+    <style>
+        .menu-caja {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            background-color: rgb(165, 88, 88);
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .menu-caja div{
+            background-color: white;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #menu-1 ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            list-style-type: none;
+            background-color: rgb(135, 171, 135);
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        #menu-1 ul li{
+            list-style-type: none;
+            background-color: gray;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-caja">
+        <div>Caja 1</div>
+        <div>Caja 2</div>
+        <div>Caja 3</div>
+    </div>
+
+    <nav id="menu-1">
+        <ul>
+            <li><a href="#">Pagina 1</a>
+            <li><a href="#">Pagina 2</a>
+            <li><a href="#">Pagina 3</a>
+        </ul>
+    </nav>
+</body>
+
+</html>
