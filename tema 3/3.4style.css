@@ -1,8 +1,57 @@
 header {
-            background-image: url(https://www.shutterstock.com/image-illustration/abstract-blue-yellow-orange-soft-600nw-2627720405.jpg);
-            background-size: cover;
-        }
+    background-image: url(https://www.shutterstock.com/image-illustration/abstract-blue-yellow-orange-soft-600nw-2627720405.jpg);
+    padding: 2em;
+    text-align: center;
+    background-size: cover;
+    background-position: fixed;
+    color: black; 
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+header img{
+    border-radius: 50%;
+    width: 150px;
+}
+body{
+    margin: 0px;
+}
+h1 {
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    list-style-type: none;
+}
+nav ul li{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(175, 175, 175);
+    padding: 20px;
+    border-radius: 200px;
+}
 
-        h1 {
-            text-align: center;
-        }
+nav ul li:hover{
+    background-color: rgb(43, 43, 43);
+}
+footer{
+    background-color: rgb(95, 182, 240);
+    margin: 0%;
+    height:300px;
+    justify-content: right;
+    text-align: right;
+}
+#formacion{
+    border-bottom: 1px solid grey;
+
+}
+.skills{
+    border-bottom: 1px solid grey;
+}
+
+#idiomas{
+    border-bottom: 1px solid grey;
+}
