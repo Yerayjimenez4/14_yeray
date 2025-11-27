@@ -3,12 +3,24 @@ header {
     padding: 2em;
     text-align: center;
     background-size: cover;
-    background-position: fixed;
     color: black;
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
+
 }
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+nav ul li:hover {
+    background-color: rgb(43, 43, 43);
+}
+
 
 header img {
     border-radius: 50%;
@@ -21,6 +33,16 @@ body {
 
 h1 {
     text-align: center;
+}
+
+h2 {
+    margin-left: 1%;
+    padding-left: 10px;
+    color: #3d6194;
+}
+
+h4 {
+    margin-left: 10px;
 }
 
 nav ul {
@@ -37,20 +59,65 @@ nav ul li {
     background-color: rgb(175, 175, 175);
     padding: 20px;
     border-radius: 200px;
-}
 
-nav ul li:hover {
-    background-color: rgb(43, 43, 43);
-}
-
-footer {
-    background-color: rgb(95, 182, 240);
-    margin: 0%;
-    height: 300px;
-    justify-content: right;
-    text-align: right;
 }
 
 #formacion {
     border-bottom: 1px solid grey;
+}
+
+article h4 {
+    padding-left: 25px;
+}
+
+article p {
+    padding-left: 45px;
+}
+
+.knowledge {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-bottom: 1px solid gray;
+}
+
+#studies {
+    border-bottom: 1px solid gray;
+}
+
+footer {
+    background-color: rgb(95, 182, 240);
+    height: 70px;
+    justify-content: end;
+    text-align: right;
+    margin-top: 100vh;
+}
+
+#Correo {
+    padding-left: 25px;
+}
+
+.habil {
+    margin-left: 15px;
+
+}
+
+#enlacegit {
+    margin-left: 30px;
+}
+
+ul li {
+
+    list-style-type: none;
+}
+
+#skills ul li:before {
+    content: "►";
+    padding-right: 0.5em;
+    color: #509e98;
+}
+
+.idiomas ul li::before {
+    content: "* ";
+    padding-right: 0.5em;
+    color: #509e98;
 }
